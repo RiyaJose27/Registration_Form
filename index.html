@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/process" method="post">
+        <div>
+            <label>First Name: *</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label>Last Name: *</label>
+            <input type="text" name="name">   
+        </div>
+        <div>
+            <label>Email Address: *</label>
+            <input type="text" name="email">
+        </div>
+        <div>
+            <label>Password: *</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label>Confirm Password: *</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label>Birthday:</label>
+            <input type="date" name="dob">
+        </div>
+        <div>
+            <p>Gender Identity:</p>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Non-binary">Non-binary
+            <input type="radio" name="gender" value="I prefer not to answer">I prefer not to answer
+
+        </div>
+        <div>
+            <p>A short decsription about myself:</p>
+            <textarea name="comment" cols="20" rows="3">               
+            </textarea>
+        </div><br>
+        <div>
+                <label for="language">Favorite Language:</label>
+                <select id="language" name="language">
+                <option>Javascript</option>
+                <option>JAVA</option>
+                <option>Phython</option>
+            </select>
+        </div><br> 
+        <div>
+            <input type="checkbox" name="updates" id="updates" checked>
+            <label for="updates">Yes!I would like to recieve peridic email updates</label><br><br>
+        </div>
+        <div>
+            <button type="submit" class="signupbtn">Create Account
+            </button>
+        </div>
+        <p> * Indicates a require field</p>
+
+    </form>
+    
+</body>
+</html>
